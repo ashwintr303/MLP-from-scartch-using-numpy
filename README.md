@@ -8,23 +8,28 @@ This code implements a multi-layer perceptron trained using backpropogation. The
 1. Python 3 or above.
 2. h5py  
 Run:
->pip install h5py
+```
+pip install h5py
+```
 
 ## Running the code
 
 ### 1. Set the file path in main.
+```
 path = 'your_file_path'
+```
 
 ### 2. Set the model and hyperparameters in the network arcitecture section.
 For example, to create a network with 3 layers (input, hidden, output) with 784, 50 and 10 nodes and with activation functions for the hidden and the output layers as relu and softmax repectively: 
-
-> nn = network([784, 50, 10],['relu', 'softmax'])
-
+```
+nn = network([784, 50, 10],['relu', 'softmax'])
+```
 The code currently supports relu, tanh and softmax. You ccan add your activations and their derivatives in the methods activation_function() and derivatives() of the network class.
 
 Batch size, number of epochs, learning rate and regularization factor can be set here:
->nn.train(x_train,y_train,x_val,y_val,batch_size=10,epochs=20,lr=0.0005,reg=0.001)
-
+```
+nn.train(x_train,y_train,x_val,y_val,batch_size=10,epochs=20,lr=0.0005,reg=0.001)
+```
 Training data (60,000) is split into train x_train (50,000) and x_val (10,000).  
 Change the size of train/validation set here:  
 ```
