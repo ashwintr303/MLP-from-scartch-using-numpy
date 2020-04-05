@@ -25,6 +25,13 @@ The code currently supports relu, tanh and softmax. You ccan add your activation
 Batch size, number of epochs, learning rate and regularization factor can be set here:
 >nn.train(x_train,y_train,x_val,y_val,batch_size=10,epochs=20,lr=0.0005,reg=0.001)
 
+Training data (60,000) is split into train x_train (50,000) and x_val (10,000).  
+Change the size of train/validation set here:  
+'''
+x_train, x_val = x_data[:50000,:], x_data[50000:,:]
+y_train, y_val = y_data[:50000], y_data[50000:]
+'''
+
 ## References
 
 [1] https://www.coursera.org/lecture/machine-learning/backpropagation-algorithm-1z9WW  
