@@ -27,10 +27,10 @@ Batch size, number of epochs, learning rate and regularization factor can be set
 
 Training data (60,000) is split into train x_train (50,000) and x_val (10,000).  
 Change the size of train/validation set here:  
-'''
+```
 x_train, x_val = x_data[:50000,:], x_data[50000:,:]
 y_train, y_val = y_data[:50000], y_data[50000:]
-'''
+```
 
 ## References
 
