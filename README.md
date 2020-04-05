@@ -6,7 +6,7 @@ This code implements a multi-layer perceptron trained using backpropogation. The
 ## Requirements:
 
 1. Python 3 or above.
-2. h5py
+2. h5py  
 Run:
 >pip install h5py
 
@@ -27,7 +27,7 @@ Batch size, number of epochs, learning rate and regularization factor can be set
 
 ## References
 
-https://www.coursera.org/lecture/machine-learning/backpropagation-algorithm-1z9WW
-https://medium.com/@a.mirzaei69/implement-a-neural-network-from-scratch-with-python-numpy-backpropagation-e82b70caa9bb
-https://www.jeremyjordan.me/neural-networks-activation-functions/
-https://stats.stackexchange.com/questions/215521/how-to-find-derivative-of-softmax-function-for-the-purpose-of-gradient-descent
+[1] https://www.coursera.org/lecture/machine-learning/backpropagation-algorithm-1z9WW  
+[2] https://medium.com/@a.mirzaei69/implement-a-neural-network-from-scratch-with-python-numpy-backpropagation-e82b70caa9bb  
+[3] https://www.jeremyjordan.me/neural-networks-activation-functions/  
+[4] https://stats.stackexchange.com/questions/215521/how-to-find-derivative-of-softmax-function-for-the-purpose-of-gradient-descent
